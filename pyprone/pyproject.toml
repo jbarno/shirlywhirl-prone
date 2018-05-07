@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "pyprone"
+version = "0.1.0"
+description = ""
+authors = ["Justin Barnowski <jbarno54@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "*"
+flask = "^1.0"
+flask-script = "^2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
+tox = "^3.0"
