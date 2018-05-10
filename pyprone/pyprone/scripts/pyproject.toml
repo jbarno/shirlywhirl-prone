@@ -9,3 +9,4 @@ python = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"
+facebook-sdk = "^2.0"
