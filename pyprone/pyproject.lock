@@ -28,7 +28,7 @@ description = "Cross-platform colored terminal text."
 [package.requirements]
 platform = "win32"
 [[package]]
-category = "main"
+category = "dev"
 platform = "*"
 version = "2.11.1"
 name = "factory-boy"
@@ -39,7 +39,7 @@ description = "A versatile test fixtures replacement based on thoughtbot's facto
 [package.dependencies]
 Faker = ">= 0.7.0.0"
 [[package]]
-category = "main"
+category = "dev"
 platform = "any"
 version = "0.8.13"
 name = "faker"
@@ -78,6 +78,18 @@ description = "Scripting support for Flask"
 [package.dependencies]
 Flask = "*"
 [[package]]
+category = "main"
+platform = "any"
+version = "2.3.2"
+name = "flask-sqlalchemy"
+python-versions = "*"
+optional = false
+description = "Adds SQLAlchemy support to your Flask application"
+
+[package.dependencies]
+Flask = ">= 0.10.0.0"
+SQLAlchemy = ">= 0.8.0.0"
+[[package]]
 category = "dev"
 platform = "UNKNOWN"
 version = "1.0.2"
@@ -91,7 +103,7 @@ ordereddict = "*"
 [package.requirements]
 python = "<3.0"
 [[package]]
-category = "main"
+category = "dev"
 platform = "*"
 version = "1.0.22"
 name = "ipaddress"
@@ -153,7 +165,7 @@ description = "A drop-in substitute for Py2.7's new collections.OrderedDict that
 [package.requirements]
 python = "<3.0"
 [[package]]
-category = "main"
+category = "dev"
 platform = "unix"
 version = "0.6.0"
 name = "pluggy"
@@ -162,7 +174,7 @@ optional = false
 description = "plugin and hook calling mechanisms for python"
 
 [[package]]
-category = "main"
+category = "dev"
 platform = "unix"
 version = "1.5.3"
 name = "py"
@@ -189,7 +201,7 @@ attrs = ">= 17.4.0.0"
 setuptools = "*"
 pluggy = "< 0.7.0.0, >= 0.5.0.0"
 [[package]]
-category = "main"
+category = "dev"
 platform = "*"
 version = "2.7.2"
 name = "python-dateutil"
@@ -200,7 +212,7 @@ description = "Extensions to the standard Python datetime module"
 [package.dependencies]
 six = ">= 1.5.0.0"
 [[package]]
-category = "main"
+category = "dev"
 platform = "*"
 version = "1.11.0"
 name = "six"
@@ -211,6 +223,15 @@ description = "Python 2 and 3 compatibility utilities"
 [[package]]
 category = "main"
 platform = "*"
+version = "1.2.7"
+name = "sqlalchemy"
+python-versions = "*"
+optional = false
+description = "Database Abstraction Library"
+
+[[package]]
+category = "dev"
+platform = "*"
 version = "1.2"
 name = "text-unidecode"
 python-versions = "*"
@@ -218,7 +239,7 @@ optional = false
 description = "The most basic Text::Unidecode port"
 
 [[package]]
-category = "main"
+category = "dev"
 platform = "unix"
 version = "3.0.0"
 name = "tox"
@@ -232,7 +253,7 @@ py = ">= 1.4.17.0"
 six = "*"
 pluggy = "< 1.0.0.0, >= 0.3.0.0"
 [[package]]
-category = "main"
+category = "dev"
 platform = "*"
 version = "15.2.0"
 name = "virtualenv"
@@ -252,7 +273,7 @@ description = "The comprehensive WSGI web application library."
 [metadata]
 platform = "*"
 python-versions = "*"
-content-hash = "564a6f34841b44661d34960fb1a0bd688bd011983d671deb3b20f98c21aa15cd"
+content-hash = "3774d341785c20901fdd8fb43ee8321f2d5ea4707ce4971be3f50d4497b6297e"
 
 [metadata.hashes]
 more-itertools = [ "11a625025954c20145b37ff6309cd54e39ca94f72f6bb9576d1195db6fa2442e", "0dd8f72eeab0d2c3bd489025bb2f6a1b8342f9b198f6fc37b52d15cfa4531fea", "c9ce7eccdcb901a2c75d326ea134e0886abfbea5f93e91cc95de9507c0816c44",]
@@ -265,10 +286,12 @@ click = [ "29f99fc6125fbc931b758dc053b3114e55c77a6e4c6c3a2674a2dc986016381d", "f
 virtualenv = [ "e8e05d4714a1c51a2f5921e62f547fcb0f713ebbe959e0a7f585cc8bef71d11f", "1d7e241b431e7afce47e77f8843a276f652699d1fa4f93b9d8ce0076fd7b0b54",]
 tox = [ "9ee7de958a43806402a38c0d2aa07fa8553f4d2c20a15b140e9f771c2afeade0", "96efa09710a3daeeb845561ebbe1497641d9cef2ee0aea30db6969058b2bda2f",]
 flask = [ "a080b744b7e345ccfcbc77954861cb05b3c63786e93f2b3875e0913d44b43f05", "2271c0070dbcb5275fad4a82e29f23ab92682dc45f9dfbc22c02ba9b9322ce48",]
-py = [ "983f77f3331356039fdd792e9220b7b8ee1aa6bd2b25f567a963ff1de5a64f6a", "29c9fab495d7528e80ba1e343b958684f4ace687327e6f789a94bf3d1915f881",]
+flask-sqlalchemy = [ "3bc0fac969dd8c0ace01b32060f0c729565293302f0c4269beed154b46bec50b", "5971b9852b5888655f11db634e87725a9031e170f37c0ce7851cf83497f56e53",]
 pytest = [ "829230122facf05a5f81a6d4dfe6454a04978ea3746853b2b84567ecf8e5c526", "54713b26c97538db6ff0703a12b19aeaeb60b5e599de542e7fca0ec83b9038e8",]
 werkzeug = [ "d5da73735293558eb1651ee2fddc4d0dedcfa06538b8813a2e20011583c9e49b", "c3fd7a7d41976d9f44db327260e263132466836cef6f91512889ed60ad26557c",]
+py = [ "983f77f3331356039fdd792e9220b7b8ee1aa6bd2b25f567a963ff1de5a64f6a", "29c9fab495d7528e80ba1e343b958684f4ace687327e6f789a94bf3d1915f881",]
 itsdangerous = [ "cbb3fcf8d3e33df861709ecaf89d9e6629cff0a217bc2848f1b41cd30d360519",]
+sqlalchemy = [ "d6cda03b0187d6ed796ff70e87c9a7dce2c2c9650a7bc3c022cd331416853c31",]
 factory-boy = [ "d552cb872b310ae78bd7429bf318e42e1e903b1a109e899a523293dfa762ea4f", "6f25cc4761ac109efd503f096e2ad99421b1159f01a29dbb917359dcd68e08ca",]
 markupsafe = [ "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665",]
 colorama = [ "463f8483208e921368c9f306094eb6f725c6ca42b0f97e313cb5d5512459feda", "48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1",]

@@ -8,6 +8,7 @@ authors = ["Justin Barnowski <jbarno54@gmail.com>"]
 python = "*"
 flask = "^1.0"
 flask-script = "^2.0"
+flask-sqlalchemy = "^2.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"
