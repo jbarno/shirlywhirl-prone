@@ -3,6 +3,7 @@
 
 import click
 import facebook
+import os
 import requests
 
 
@@ -17,9 +18,9 @@ def get_from(source):
         return get_facebook(source)
     raise NotImplementedError("soon")
 
-@click.command()
-@click.argument("page_id", default=page_id)
-@click.argument("token", envvar="FB_ACCESS_TOKEN")
-def get_facebook(page_id, token):
+
+def get_facebook(page_id=page_id, token=os.environ.get("FB_ACCESS_TOKEN")):
+    if not token:
+        raise EnvironmentError("Missing FB_ACCESS_TOKEN")
     g = facebook.GraphAPI(access_token=token)
     click.echo(request.get("https://{src}/266760960405597?fields=about,photos{webp_images,images}".format(src=src)))
