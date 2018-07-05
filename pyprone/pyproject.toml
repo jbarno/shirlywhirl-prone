@@ -8,9 +8,9 @@ authors = ["Justin Barnowski <jbarno54@gmail.com>"]
 python = "*"
 flask = "^1.0"
 flask-script = "^2.0"
-tox = "^3.0"
-factory-boy = "^2.11"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"
 tox = "^3.0"
+factory-boy = "^2.11"
+pylama = "^7.4"
