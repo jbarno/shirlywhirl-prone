@@ -16,10 +16,12 @@ def runner():
 def env_override():
     orig = None
     out_key = None
+
     def return_func(key, value):
         orig = os.environ.get(key)
         out_key = key
-        os.environ[key] = value
+        if value:  # If value is None dont set
+            os.environ[key] = value
 
     yield return_func
     if orig:

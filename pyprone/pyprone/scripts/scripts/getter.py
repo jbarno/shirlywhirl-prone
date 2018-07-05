@@ -12,9 +12,10 @@ page_id = 266760960405597
 @click.command()
 @click.argument("source", default="facebook")
 def get_from(source):
+    print source
     if "facebook" in source:
         return get_facebook(source)
-    raise NotImplemented("soon")
+    raise NotImplementedError("soon")
 
 @click.command()
 @click.argument("page_id", default=page_id)

@@ -1,4 +1,3 @@
-import pytest
 from scripts import __version__
 from scripts.getter import get_from
 
@@ -8,20 +7,21 @@ def test_version():
 
 
 def test_unknown_source(runner):
-    with pytest.raises(NotImplemented):
-        runner.invoke(get_from, ["fake_source"])
+    res = runner.invoke(get_from, ["fake_source"])
+    assert isinstance(res.exception, NotImplementedError)
+    assert res.exit_code == -1
 
 
 def test_fb_access_missing(env_override, runner):
     env_override("FB_ACCESS_TOKEN", None)
-    with pytest.raises(EnvironmentError):
-        res = runner.invoke(get_from, ["facebook"])
+    res = runner.invoke(get_from, ["facebook"])
+    assert isinstance(res.exception, EnvironmentError)
+    assert res.exit_code == -1
 
 
 # MOCK it
 def test_fb_access_invalid():
-    with pytest.raises(BaseException):
-        pass
+    pass
 
 
 def test_fb_down():
