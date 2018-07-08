@@ -7,6 +7,7 @@ authors = ["Justin Barnowski <jbarno54@gmail.com>"]
 [tool.poetry.dependencies]
 python = "*"
 facebook-sdk = "^2.0"
+getter = {path = "scripts"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"

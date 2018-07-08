@@ -10,6 +10,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        getter=getter:cli
+        getter=scripts.getter:get_from
     ''',
 )
