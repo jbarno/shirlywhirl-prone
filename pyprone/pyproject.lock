@@ -288,6 +288,43 @@ version = "*"
 
 [[package]]
 category = "dev"
+description = "Pytest plugin for measuring coverage."
+name = "pytest-cov"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "2.5.1"
+
+[package.dependencies]
+coverage = ">=3.7.1"
+pytest = ">=2.6.0"
+
+[[package]]
+category = "dev"
+description = "Pytest plugin for measuring coverage. Forked from `pytest-cov`."
+name = "pytest-cover"
+optional = false
+platform = "UNKNOWN"
+python-versions = "*"
+version = "3.0.0"
+
+[package.dependencies]
+pytest-cov = ">=2.0"
+
+[[package]]
+category = "dev"
+description = "Pytest plugin for measuring coverage. Forked from `pytest-cov`."
+name = "pytest-coverage"
+optional = false
+platform = "all"
+python-versions = "*"
+version = "0.0"
+
+[package.dependencies]
+pytest-cover = "*"
+
+[[package]]
+category = "dev"
 description = "Extensions to the standard Python datetime module"
 name = "python-dateutil"
 optional = false
@@ -359,7 +396,7 @@ python-versions = "*"
 version = "0.14.1"
 
 [metadata]
-content-hash = "e1a8f4c408db236752ceb2e08c3a94a1282144d296218e8c7294cd2a28338650"
+content-hash = "fbb49d5f6f3a1f388900f8c303feb0537eb9da01e4f11abe58649ff80b0f9d63"
 platform = "*"
 python-versions = "*"
 
@@ -388,6 +425,9 @@ pydocstyle = ["08a870edc94508264ed90510db466c6357c7192e0e866561d740624a8fc7d90c"
 pyflakes = ["9a7662ec724d0120012f6e29d6248ae3727d821bba522a0e6b356eff19126a49", "f661252913bc1dbe7fcfcbf0af0db3f42ab65aabd1a6ca68fe5d466bace94dae"]
 pylama = ["390c1dab1daebdf3d6acc923e551b035c3faa77d8b96b98530c230493f9ec712", "a3670459e7855529e2ccd3959e0bdebd694ac62bcdc7c58a877f3456c0a2058b"]
 pytest = ["0453c8676c2bee6feb0434748b068d5510273a916295fd61d306c4f22fbfd752", "4b208614ae6d98195430ad6bde03641c78553acee7c83cec2e85d613c0cd383d"]
+pytest-cov = ["03aa752cf11db41d281ea1d807d954c4eda35cfa1b21d6971966cc041bbf6e2d", "890fe5565400902b0c78b5357004aab1c814115894f4f21370e2433256a3eeec"]
+pytest-cover = ["578249955eb3b5f3991209df6e532bb770b647743b7392d3d97698dc02f39ebb", "5bdb6c1cc3dd75583bb7bc2c57f5e1034a1bfcb79d27c71aceb0b16af981dbf4"]
+pytest-coverage = ["db6af2cbd7e458c7c9fd2b4207cee75258243c8a81cad31a7ee8cfad5be93c05", "dedd084c5e74d8e669355325916dc011539b190355021b037242514dee546368"]
 python-dateutil = ["1adb80e7a782c12e52ef9a8182bebeb73f1d7e24e374397af06fb4956c8dc5c0", "e27001de32f627c22380a688bcc43ce83504a7bc5da472209b4c70f02829f0b8"]
 six = ["70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9", "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"]
 snowballstemmer = ["919f26a68b2c17a7634da993d91339e288964f93c274f1343e3bbbe2096e1128", "9f3bcd3c401c3e862ec0ebe6d2c069ebc012ce142cce209c098ccb5b09136e89"]
