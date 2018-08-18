@@ -20,6 +20,7 @@ def env_override():
     def return_func(key, value):
         orig = os.environ.get(key)
         out_key = key
+        if key in os.environ: del os.environ[key]
         if value:  # If value is None dont set
             os.environ[key] = value
 
