@@ -113,7 +113,6 @@ python-versions = "*"
 version = "1.0.2"
 
 [package.dependencies]
-
 [package.dependencies.ordereddict]
 python = "<2.7"
 version = "*"
@@ -432,7 +431,7 @@ python-versions = "*"
 version = "0.14.1"
 
 [metadata]
-content-hash = "fbb49d5f6f3a1f388900f8c303feb0537eb9da01e4f11abe58649ff80b0f9d63"
+content-hash = "19c44f8a44c515b1160e6a2071e615f0bd66cb66c226ea53e56c8ff84b70e59f"
 platform = "*"
 python-versions = "*"
 
