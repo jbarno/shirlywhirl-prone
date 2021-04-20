@@ -23,7 +23,7 @@ itsdangerous==0.24
 pants==1.0.1
 pluggy==0.6.0
 promise==2.1
-py==1.5.2
+py==1.10.0
 pytest-cov==2.5.1
 pytest==3.3.2
 requests==2.18.4
